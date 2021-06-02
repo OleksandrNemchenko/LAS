@@ -1,3 +1,5 @@
 # Microsoft Visual Studio
 .vs
 *.vcxproj.user
+Debug
+Release
