@@ -10,9 +10,15 @@
     <Filter Include="include\las_parser">
       <UniqueIdentifier>{909eef5f-ab06-4e55-9ab4-629caa33e4d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{e24537b9-f53a-44cc-bc0c-d3be83c6fd9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\las_parser\las2.hpp">
+      <Filter>include\las_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="include\las_parser\lasCore.hpp">
       <Filter>include\las_parser</Filter>
     </ClInclude>
   </ItemGroup>
@@ -20,12 +26,27 @@
     <ClCompile Include="src\las2.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\lasCore.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\las2generate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="README.md" />
+    <None Include="docs\Las2_Update_Feb2017.pdf">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="docs\LAS_3_File_Structure.pdf">
+      <Filter>docs</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
+    <Text Include="docs\LAS12_Standards.txt">
+      <Filter>docs</Filter>
+    </Text>
   </ItemGroup>
 </Project>
