@@ -24,7 +24,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\las2.cpp" />
-    <ClCompile Include="src\las2generate.cpp" />
     <ClCompile Include="src\lasCore.cpp" />
   </ItemGroup>
   <ItemGroup>

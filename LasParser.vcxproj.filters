@@ -29,9 +29,6 @@
     <ClCompile Include="src\lasCore.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\las2generate.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

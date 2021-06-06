@@ -15,24 +15,13 @@ public:
     bool ParseWithError(const std::string& fileContents, std::wstring* errorDescription) override;
 
     static std::wstring m_msgRequiredSectionsAreAbsent;
+    static std::wstring m_msgIncorrentCurvePosition;
 
-    struct SGenerateData
-    {
-        using TValues = std::vector<SValue>;
-        using TLogLine = std::vector<std::string>;
-        using TLogData = std::vector<TLogLine>;
+    std::string Generate();
 
-        TValues m_version;
-        TValues m_well;
-        TValues m_curve;
-        TValues m_parameter;
-        std::string m_other;
-        TLogData m_log;
-    };
-    static CLAS2 Generate(const struct SGenerateData& data);    // throws std::wstring
-
-protected:
+private:
     void Validate() override;
+    void ValidateBeforeGenerating();
 };
 
 #endif // LAS_PARSER_VER_2

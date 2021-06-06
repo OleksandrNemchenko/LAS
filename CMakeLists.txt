@@ -22,7 +22,6 @@ target_sources(las-parser
 
     PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/src/las2.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/las2generate.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/lasCore.cpp
     )
 
