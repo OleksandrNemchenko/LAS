@@ -89,7 +89,7 @@ void CLASCore::DetectSections(const TLines& lines)
             currentSection = line.at(SECTION_NAME_POS);
             section = &m_section[currentSection];
             section->m_fullName = line.substr(SECTION_NAME_POS);
-            positionId = -1;
+            positionId = 0;
 
             continue;
         }
