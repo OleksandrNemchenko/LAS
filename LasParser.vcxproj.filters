@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{dee1d11e-6eb3-48f2-8a54-17546589fe10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ecd7649e-ce19-4af1-b5b2-cf0491095cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\las_parser">
+      <UniqueIdentifier>{909eef5f-ab06-4e55-9ab4-629caa33e4d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{e24537b9-f53a-44cc-bc0c-d3be83c6fd9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\las_parser\las2.hpp">
+      <Filter>include\las_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="include\las_parser\lasCore.hpp">
+      <Filter>include\las_parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\las2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lasCore.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+    <None Include="docs\Las2_Update_Feb2017.pdf">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="docs\LAS_3_File_Structure.pdf">
+      <Filter>docs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="docs\LAS12_Standards.txt">
+      <Filter>docs</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
