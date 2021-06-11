@@ -148,21 +148,17 @@ std::string CLAS2::Generate()
 
     outputSection(Section('V'));
 
-    rawFile += m_stringDelimiter;
     outputSection(Section('W'));
 
-    rawFile += m_stringDelimiter;
     outputSection(Section('C'));
 
     if (HasSection('P'))
     {
-        rawFile += m_stringDelimiter;
         outputSection(Section('P'));
     }
 
     if (HasSection('O'))
     {
-        rawFile += m_stringDelimiter;
         rawFile += Others();
     }
 
@@ -172,14 +168,13 @@ std::string CLAS2::Generate()
         if (sectionToSkip.contains(section.first))
             continue;
 
-        rawFile += m_stringDelimiter;
         outputSection(Section(section.first));
     }
 
-    rawFile += m_stringDelimiter + '~' + Section('A').m_fullName + m_stringDelimiter;
+    rawFile += '~' + Section('A').m_fullName + m_stringDelimiter;
     for (const SLogData& line : Logs())
     {
-        rawFile += line.m_index;
+        rawFile += " "s + line.m_index;
         for (const std::string& value: line.m_values)
             rawFile += " "s + value;
         rawFile += m_stringDelimiter;
