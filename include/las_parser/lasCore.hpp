@@ -39,6 +39,8 @@ public:
 
     virtual ~CLASCore() = default;
 
+    void Clear();
+
     virtual bool ParseWithError(const std::string& fileContents, std::wstring* errorDescription) = 0;
     bool ParseWithError(const std::filesystem::path& filePath, std::wstring* errorDescription);
     bool Parse(const std::string& fileContents)            { return ParseWithError(fileContents, nullptr); }

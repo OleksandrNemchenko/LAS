@@ -272,3 +272,10 @@ bool CLASCore::HasField(char section, const std::string& name) const noexcept
 
     return values.find(name) != values.cend();
 }
+
+void CLASCore::Clear()
+{
+    m_section.clear();
+    m_other.clear();
+    m_log.clear();
+}
