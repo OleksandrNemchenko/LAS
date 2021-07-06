@@ -172,12 +172,17 @@ std::string CLAS2::Generate()
     }
 
     rawFile += '~' + Section('A').m_fullName + m_stringDelimiter;
+    bool firstLogLine = true;
     for (const SLogData& line : Logs())
     {
+        if (!firstLogLine)
+            rawFile += m_stringDelimiter;
+        else
+            firstLogLine = false;
+
         rawFile += " "s + line.m_index;
         for (const std::string& value: line.m_values)
             rawFile += " "s + value;
-        rawFile += m_stringDelimiter;
     }
 
     return rawFile;
