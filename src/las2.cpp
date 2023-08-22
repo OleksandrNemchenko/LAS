@@ -102,7 +102,7 @@ std::string CLAS2::Generate()
 
         std::vector<std::pair<const std::string*, const SValue*>> values;
 
-        int valuesAmount = section.m_values.size();
+        size_t valuesAmount = section.m_values.size();
 
         values.reserve(valuesAmount);
 
